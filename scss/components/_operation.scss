@@ -1,0 +1,180 @@
+.operation {
+    background: url(../images/operation-bg.png) no-repeat top center;
+    background-size: cover;
+    padding: 70px 0 52px;
+    margin-bottom: 60px;
+
+    h2 {
+        color: $color-white;
+        margin-bottom: 66px;
+    }
+
+    &__content {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-right: 3px #2C60A0 dotted;
+            border-bottom: 3px #2C60A0 dotted;
+            border-radius: 0 0 30px;
+            width: calc(50% - 85px);
+            height: 36px;
+            top: 76px;
+            left: 90px;
+        }
+
+        button {
+            line-height: 74px;
+            border: none;
+            box-shadow: 0 3px 35px rgba($color: $color-black, $alpha: 0.26);
+            margin: 0 auto;
+        }
+    }
+
+    &__list {
+        padding: 0 30px;
+        margin-bottom: 35px;
+    }
+
+    &__step {
+        position: relative;
+        padding: 40px 120px 40px 10px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: calc(100% - 160px);
+            height: 100%;
+            top: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-top: 3px #2C60A0 dotted;
+            top: -3px;
+        }
+
+        &:first-of-type {
+            margin-top: 36px;
+        }
+
+        &:nth-of-type(odd) {
+            h3, p {
+                text-align: left;
+                margin-left: 63px;
+            }
+
+            div {
+                left: 10px;
+            }
+
+            &::before {
+                border-left: 3px #2C60A0 dotted;
+                border-bottom: 3px #2C60A0 dotted;
+                border-radius: 30px 0 0 30px;
+                left: 33px;
+            }
+
+            &::after {
+                border-left: 3px #2C60A0 dotted;
+                border-radius: 30px 0 0 0;
+                left: 33px;
+            }
+        }
+
+        &:nth-of-type(even) {
+            h3, p {
+                text-align: right;
+                margin-left: auto;
+                margin-right: 18px;
+            }
+
+            div {
+                right: 73px;
+            }
+
+            &::before {
+                border-right: 3px #2C60A0 dotted;
+                border-bottom: 3px #2C60A0 dotted;
+                border-radius: 0 30px 30px 0;
+                left: 63px;
+            }
+
+            &::after {
+                border-right: 3px #2C60A0 dotted;
+                border-radius:0 30px 0 0;
+                right: 98px;
+            }
+        }
+
+        &:last-of-type {
+            div::after {
+                height: 50px;
+                bottom: -50px;
+                background-color: #1D4178;
+            }
+
+            &::before {
+                border-bottom: none;
+                border-end-end-radius: 0;
+                border-end-start-radius: 0;
+            }
+        }
+
+        div {
+            position: absolute;
+            font-family: $font-main;
+            font-weight: $font-weight-medium;
+            font-size: 30px;
+            line-height: 30px;
+            color: $color-white;
+            background-color: $color-second;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            padding-bottom: 3px;
+            border-radius: 50%;
+            box-shadow: 0 3px 35px rgba($color: $color-black, $alpha: 0.26);
+            top: calc(50% - 25px);
+
+            &::before {
+                content: url(../images/step-arrow.png);
+                position: absolute;
+                left: calc(50% - 9px);
+                top: -33px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 15px;
+                background-color: #153A6F;
+                left: calc(50% - 2px);
+                bottom: -15px;
+            }
+        }
+
+        h3 {
+            font-weight: $font-weight-bold;
+            font-size: 25px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: $color-second;
+        }
+
+        p {
+            font-weight: $font-weight-light;
+            font-size: 17px;
+            line-height: 20px;
+            color: $color-white;
+            max-width: 75%;
+        }
+    }
+}

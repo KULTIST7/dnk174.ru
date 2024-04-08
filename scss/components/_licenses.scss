@@ -1,0 +1,32 @@
+.licenses {
+    background: url(../images/licenses-bg.png) no-repeat top center;
+    background-size: cover;
+    padding: 220px 50px 57px;
+    transform: translateY(-140px);
+    margin-bottom: -140px;
+    
+    h2 {
+        color: $color-white;
+        margin-bottom: 70px;
+    }
+
+    .swiper-licenses {
+        margin-bottom: 84px;
+    }
+
+    .swiper-pagination {
+        bottom: 57px;
+
+        &-bullet {
+            width: 17px;
+            height: 17px;
+            background-color: #F6EEFB;
+            margin: 0 10px !important;
+            opacity: 1;
+
+            &-active {
+                background-color: #76B2F3;
+            }
+        }
+    }
+}

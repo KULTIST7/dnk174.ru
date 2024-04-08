@@ -1,0 +1,47 @@
+.description {
+    background: url(../images/description-bg.png) no-repeat top center;
+    background-size: cover;
+    padding: 66px 0 0;
+
+    h2 {
+        position: relative;
+        color: #7A7A7A;
+        margin-bottom: 120px;
+
+        &::first-letter {
+            color: $color-second;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 154px;
+            height: 4px;
+            background-color: #00BFD7;
+            border-radius: 2px;
+            left: calc(50% - 77px);
+            bottom: -10px;
+        }
+    }
+
+    &__text {
+        background-color: $color-white;
+        padding: 45px 25px 66px;
+
+        p, ol li, ul li {
+            font-family: $font-main;
+            font-weight: $font-weight-medium;
+            font-size: 18px;
+            line-height: 18px;
+            color: $color-light-gray;
+        }
+
+        p, ol li {
+            margin-bottom: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+    }
+}

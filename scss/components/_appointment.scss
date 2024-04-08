@@ -1,0 +1,89 @@
+.appointment {
+    background-color: $color-blue;
+    padding: 40px;
+
+    &__content {
+        display: flex;
+        height: 100%;
+
+        form {
+            display: flex;
+            max-width: 90%;
+            width: 100%;
+        }
+    }
+
+    &__form-wrapper {
+        // display: flex;
+        margin-right: 45px;
+    }
+
+    &__input-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        p {
+            position: relative;
+            font-family: $font-main;
+            font-weight: $font-weight-bold;
+            font-size: 18px;
+            color: $color-white;
+            margin-right: auto;
+
+            &::before {
+                content: '*';
+                position: absolute;
+                font-family: $font-main;
+                font-weight: $font-weight-bold;
+                font-size: 18px;
+                color: $color-second;
+                top: 0;
+                right: -15px;
+            }
+        }
+
+        input {
+            font-family: $font-main;
+            font-weight: $font-weight-medium;
+            font-size: 18px;
+            box-shadow: 0 8px 18px rgba($color: $color-black, $alpha: 0.06);
+            border: 1px #6C5DC0 solid;
+            border-radius: 19.5px;
+            line-height: 37px;
+            width: 75%;
+            padding: 0 20px;
+            margin-left: 23px;
+
+            @media #{$desktop} {
+                width: 70%;
+            }
+        }
+    }
+
+    &__notice {
+        width: 75%;
+        margin-left: auto;
+
+        @media #{$desktop} {
+            width: 70%;
+        }
+
+        &>p {
+            margin-bottom: 23px;
+        }
+
+        p,
+        input {
+            font-family: Arial;
+            font-size: 13px;
+            line-height: 17px;
+            color: #C8C8C8;
+        }
+
+        div {
+            display: flex;
+            align-items: start;
+        }
+    }
+}

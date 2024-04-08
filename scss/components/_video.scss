@@ -1,0 +1,30 @@
+.video {
+    background: url(../images/video-bg.png) no-repeat top center;
+    background-size: cover;
+    padding: 112px 0 150px;
+
+    &__content {
+        max-width: 1002px;
+
+        @media #{$desktop} {
+            max-width: 750px;
+        }
+
+        iframe {
+            border: 15px #494A5B solid;
+            margin-bottom: 35px;
+            aspect-ratio: 16 / 9;
+
+            @media #{$desktop} {
+                width: 750px;
+            }
+        }
+
+        p {
+            font-size: $font-size-base;
+            line-height: 17px;
+            color: $color-white;
+            margin-left: 15px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.indications {
+    padding: 0 50px 64px;
+
+    h2 {
+        color: $color-second;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__card {
+        position: relative;
+        width: calc(50% - 20px);
+        border-radius: 30px;
+        box-shadow: 0 9px 13px rgba($color: $color-black, $alpha: 0.06);
+        padding: 60px 25px;
+
+        &::before {
+            font-family: $font-main;
+            font-weight: $font-weight-regular;
+            font-size: 40px;
+            line-height: 40px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            background-color: $color-white;
+            border-radius: 50%;
+            top: -32.5px;
+            left: calc(50% - 32.5px);
+        }
+
+        &:first-child {
+            background-color: #76B2F3;
+
+            &::before {
+                content: 'V';
+                color: #7AB4F3;
+                border: 1px #76B2F3 solid;
+            }
+
+            h3, ul {
+                color: #20467F;
+            }
+        }
+
+        &:last-child {
+            background-color: #FDE0E7;
+            border: 1px #FFA6C1 solid;
+
+            &::before {
+                content: 'X';
+                border: 1px #FFA6C1 solid;
+            }
+
+            h3, ul, &::before {
+                color: #EB2661;
+            }
+        }
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+            @media #{$desktop} {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        ul {
+            padding-left: 25px;
+
+            li {
+                font-family: $font-main;
+                font-weight: $font-weight-medium;
+                font-size: 22px;
+                line-height: 22px;
+                margin-bottom: 38px;
+
+                @media #{$desktop} {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

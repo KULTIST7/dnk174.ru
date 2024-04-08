@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: local('Cera Round Pro Bold'), local('Cera-Round-Pro-Bold'),
+        url('../fonts/CeraRoundPro/700/TypeMates\ -\ CeraRoundPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: local('Cera Round Pro Medium'), local('Cera-Round-Pro-Medium'),
+    url('../fonts/CeraRoundPro/500/TypeMates\ -\ CeraRoundPro-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: local('Cera Round Pro Regular'), local('Cera-Round-Pro-Regular'),
+    url('../fonts/CeraRoundPro/400/TypeMates\ -\ CeraRoundPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Round Pro';
+    src: local('Cera Round Pro Light'), local('Cera-Round-Pro-Light'),
+    url('../fonts/CeraRoundPro/300/TypeMates\ -\ CeraRoundPro-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

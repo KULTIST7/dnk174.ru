@@ -1,0 +1,50 @@
+.section-box {
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: $font-main;
+    font-weight: $font-weight-medium;
+    font-size: 40px;
+    line-height: 36px;
+    color: $color-main;
+    text-align: center;
+}
+
+a {
+    font-family: Arial;
+    font-size: 13px;
+    color: #349AFF;
+    text-decoration: none;
+}
+
+p {
+    font-family: $font-main;
+    font-weight: $font-weight-regular;
+    font-size: 18px;
+    color: $color-main;
+}
+
+button, .btn {
+    font-family: $font-main;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    color: $color-white;
+    line-height: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background-color: $color-second;
+    border: 2px $color-white solid;
+    border-radius: 50px;
+    box-shadow: 0 8px 18px rgba($color: $color-black, $alpha: 0.06);
+    min-width: 280px;
+    height: max-content;
+    cursor: pointer;
+}

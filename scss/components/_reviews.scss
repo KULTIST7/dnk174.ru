@@ -1,0 +1,112 @@
+.reviews {
+    background: url(../images/reviews-bg.png) no-repeat top center;
+    background-size: cover;
+    padding: 100px 200px 128px;
+
+    @media screen and (max-width: 1400px) {
+        padding: 100px 100px 128px;
+    }
+
+    h2 {
+        color: $color-second;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        line-height: 40px;
+        color: #3D81CD;
+        background-color: $color-white;
+        border: 1px #3D81CD solid;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        position: relative;
+        max-width: 1275px;
+        margin: 0 auto;
+    }
+
+    .swiper {
+        &-button-prev,
+        &-button-next {
+            width: 60px;
+            height: 60px;
+            color: $color-white;
+            background-color: rgba($color: $color-black, $alpha: 0.2);
+            border-radius: 50%;
+            top: 50%;
+    
+            &::after {
+                font-size: 23px;
+            }
+        }
+        
+        &-button-prev {
+            left: -160px;
+
+            @media screen and (max-width: 1400px) {
+                left: -80px;
+            }
+        }
+
+        &-button-next {
+            right: -160px;
+            
+            @media screen and (max-width: 1400px) {
+                right: -80px;
+            }
+        }
+
+        &-slide {
+            position: relative;
+            height: auto;
+            padding: 0 15px 15px;
+        }
+    }
+
+    &__slide {
+        &__avatar {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 0;
+            left: calc(50% - 40px);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border: 10px #C6C0CF solid;
+                border-radius: 50%;
+            }
+        }
+
+        &__content {
+            background-color: $color-white;
+            width: 100%;
+            height: calc(100% - 40px);
+            box-shadow: 0 4px 13px rgba($color: $color-black, $alpha: 0.13);
+            padding: 100px 20px 20px 27px;
+            margin-top: 40px;
+
+            h3 {
+                font-size: 20px;
+                line-height: 17px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__rating {
+            font-size: 12px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
