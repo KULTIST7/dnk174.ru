@@ -16,6 +16,10 @@
         @media #{$desktop} {
             gap: 22px;
         }
+
+        @media #{$phone} {
+            padding: 0 15px;
+        }
     }
 
     &__card {
@@ -24,6 +28,16 @@
         min-height: 200px;
         padding: 32px 17px;
         border-radius: 15px;
+        
+        @media #{$tablet} {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media #{$phone} {
+            width: 100%;
+            padding: 15px;
+        }
         
         &:nth-child(1),
         &:nth-child(4),
@@ -37,12 +51,30 @@
             background: linear-gradient(-45deg, rgba(0,117,185,1) 9%, rgba(152,215,255,1) 100%);
         }
 
+        &:nth-child(even) {
+            @media #{$phone} {
+                background: linear-gradient(-45deg, rgba(0,117,185,1) 9%, rgba(152,215,255,1) 100%);
+            }
+        }
+
+        &:nth-child(odd) {
+            @media #{$phone} {
+                background: linear-gradient(-45deg, rgba(14,55,113,1) 9%, rgba(30,80,155,1) 100%);
+            }
+        }
+
         &__img-box {
             display: flex;
             align-items: center;
             justify-content: end;
             min-width: 141px;
             height: 100%;
+
+            @media #{$phone} {
+                min-width: 0;
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
 
             img {
                 width: max-content;
@@ -53,6 +85,10 @@
         &__text-box {
             margin-left: 40px;
 
+            @media #{$tablet} {
+                margin-left: 0;
+            }
+
             h3 {
                 font-weight: $font-weight-base;
                 color: $color-white;
@@ -61,6 +97,16 @@
 
                 @media #{$desktop} {
                     font-size: 30px;
+                }
+
+                @media #{$tablet} {
+                    text-align: center;
+                }
+
+                @media #{$phone} {
+                    font-size: 25px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
                 }
             }
 
@@ -72,6 +118,15 @@
 
                 @media #{$desktop} {
                     font-size: 20px;
+                }
+
+                @media #{$tablet} {
+                    text-align: center;
+                }
+
+                @media #{$phone} {
+                    font-size: 16px;
+                    line-height: 16px;
                 }
             }
         }

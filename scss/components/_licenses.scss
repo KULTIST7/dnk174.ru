@@ -14,6 +14,15 @@
         margin-bottom: 84px;
     }
 
+    .swiper-slide {
+        a {
+            @media screen and (max-width: 499px) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
     .swiper-pagination {
         bottom: 57px;
 

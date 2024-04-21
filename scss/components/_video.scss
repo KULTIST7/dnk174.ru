@@ -10,13 +10,32 @@
             max-width: 750px;
         }
 
+        @media #{$phone} {
+            width: 500px;
+        }
+
+        @media screen and (max-width: 530px) {
+            width: 345px;
+        }
+
         iframe {
             border: 15px #494A5B solid;
             margin-bottom: 35px;
             aspect-ratio: 16 / 9;
 
             @media #{$desktop} {
-                width: 750px;
+                width: 720px;
+            }
+
+            @media #{$phone} {
+                width: 500px;
+                border: 10px #494A5B solid;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 530px) {
+                width: 345px;
+                border: 5px #494A5B solid;
             }
         }
 
@@ -25,6 +44,10 @@
             line-height: 17px;
             color: $color-white;
             margin-left: 15px;
+
+            @media #{$phone} {
+                font-size: 13px;
+            }
         }
     }
 }

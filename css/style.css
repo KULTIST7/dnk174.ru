@@ -50,6 +50,17 @@ h6, .h6 {
   color: #3A4451;
   text-align: center;
 }
+@media screen and (max-width: 749px) {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
 
 a {
   font-family: Arial;
@@ -83,6 +94,13 @@ button, .btn {
   height: max-content;
   cursor: pointer;
 }
+@media screen and (max-width: 999px) {
+  button, .btn {
+    font-size: 14px;
+    line-height: 40px;
+    min-width: 240px;
+  }
+}
 
 .banner-bg {
   -o-object-fit: cover;
@@ -107,22 +125,59 @@ button, .btn {
   background-color: #20457F;
   padding: 40px;
 }
+@media screen and (max-width: 999px) {
+  .appointment {
+    padding: 30px 15px;
+  }
+}
 .appointment__content {
   display: flex;
   height: 100%;
+}
+@media screen and (max-width: 749px) {
+  .appointment__content {
+    justify-content: center;
+  }
 }
 .appointment__content form {
   display: flex;
   max-width: 90%;
   width: 100%;
 }
+@media screen and (max-width: 749px) {
+  .appointment__content form {
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  .appointment__content form .btn {
+    margin-top: 20px;
+  }
+}
 .appointment__form-wrapper {
   margin-right: 45px;
+}
+@media screen and (max-width: 999px) {
+  .appointment__form-wrapper {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .appointment__form-wrapper {
+    margin-right: 0;
+  }
 }
 .appointment__input-box {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 749px) {
+  .appointment__input-box {
+    flex-direction: column;
+  }
 }
 .appointment__input-box p {
   position: relative;
@@ -131,6 +186,16 @@ button, .btn {
   font-size: 18px;
   color: #fff;
   margin-right: auto;
+}
+@media screen and (max-width: 999px) {
+  .appointment__input-box p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .appointment__input-box p {
+    margin-bottom: 10px;
+  }
 }
 .appointment__input-box p::before {
   content: "*";
@@ -159,6 +224,17 @@ button, .btn {
     width: 70%;
   }
 }
+@media screen and (max-width: 999px) {
+  .appointment__input-box input {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .appointment__input-box input {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .appointment__notice {
   width: 75%;
   margin-left: auto;
@@ -168,8 +244,19 @@ button, .btn {
     width: 70%;
   }
 }
+@media screen and (max-width: 749px) {
+  .appointment__notice {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 .appointment__notice > p {
   margin-bottom: 23px;
+}
+@media screen and (max-width: 999px) {
+  .appointment__notice > p {
+    margin-bottom: 15px;
+  }
 }
 .appointment__notice p,
 .appointment__notice input {
@@ -177,6 +264,12 @@ button, .btn {
   font-size: 13px;
   line-height: 17px;
   color: #C8C8C8;
+}
+@media screen and (max-width: 999px) {
+  .appointment__notice p,
+  .appointment__notice input {
+    font-size: 11px;
+  }
 }
 .appointment__notice div {
   display: flex;
@@ -202,6 +295,11 @@ button, .btn {
     gap: 22px;
   }
 }
+@media screen and (max-width: 749px) {
+  .advantages__content {
+    padding: 0 15px;
+  }
+}
 .advantages__card {
   display: flex;
   width: calc(50% - 20px);
@@ -209,11 +307,33 @@ button, .btn {
   padding: 32px 17px;
   border-radius: 15px;
 }
+@media screen and (max-width: 999px) {
+  .advantages__card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  .advantages__card {
+    width: 100%;
+    padding: 15px;
+  }
+}
 .advantages__card:nth-child(1), .advantages__card:nth-child(4), .advantages__card:nth-child(5) {
   background: linear-gradient(-45deg, rgb(14, 55, 113) 9%, rgb(30, 80, 155) 100%);
 }
 .advantages__card:nth-child(2), .advantages__card:nth-child(3), .advantages__card:nth-child(6) {
   background: linear-gradient(-45deg, rgb(0, 117, 185) 9%, rgb(152, 215, 255) 100%);
+}
+@media screen and (max-width: 749px) {
+  .advantages__card:nth-child(even) {
+    background: linear-gradient(-45deg, rgb(0, 117, 185) 9%, rgb(152, 215, 255) 100%);
+  }
+}
+@media screen and (max-width: 749px) {
+  .advantages__card:nth-child(odd) {
+    background: linear-gradient(-45deg, rgb(14, 55, 113) 9%, rgb(30, 80, 155) 100%);
+  }
 }
 .advantages__card__img-box {
   display: flex;
@@ -221,6 +341,13 @@ button, .btn {
   justify-content: end;
   min-width: 141px;
   height: 100%;
+}
+@media screen and (max-width: 749px) {
+  .advantages__card__img-box {
+    min-width: 0;
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
 }
 .advantages__card__img-box img {
   width: -moz-max-content;
@@ -231,6 +358,11 @@ button, .btn {
 .advantages__card__text-box {
   margin-left: 40px;
 }
+@media screen and (max-width: 999px) {
+  .advantages__card__text-box {
+    margin-left: 0;
+  }
+}
 .advantages__card__text-box h3 {
   font-weight: 400;
   color: #fff;
@@ -240,6 +372,18 @@ button, .btn {
 @media screen and (max-width: 1279px) {
   .advantages__card__text-box h3 {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .advantages__card__text-box h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  .advantages__card__text-box h3 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
   }
 }
 .advantages__card__text-box p {
@@ -253,6 +397,17 @@ button, .btn {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 999px) {
+  .advantages__card__text-box p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  .advantages__card__text-box p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 
 .description {
   background: url(../images/description-bg.png) no-repeat top center;
@@ -263,6 +418,11 @@ button, .btn {
   position: relative;
   color: #7A7A7A;
   margin-bottom: 120px;
+}
+@media screen and (max-width: 999px) {
+  .description h2 {
+    margin-bottom: 50px;
+  }
 }
 .description h2::first-letter {
   color: #EB2561;
@@ -281,12 +441,23 @@ button, .btn {
   background-color: #fff;
   padding: 45px 25px 66px;
 }
+@media screen and (max-width: 999px) {
+  .description__text {
+    padding: 25px 15px 25px;
+  }
+}
 .description__text p, .description__text ol li, .description__text ul li {
   font-family: "Cera Round Pro", Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   color: #5F5656;
+}
+@media screen and (max-width: 999px) {
+  .description__text p, .description__text ol li, .description__text ul li {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 .description__text p, .description__text ol li {
   margin-bottom: 20px;
@@ -302,6 +473,11 @@ button, .btn {
   padding: 260px 0 320px;
   margin-bottom: -180px;
 }
+@media screen and (max-width: 999px) {
+  .services {
+    margin-bottom: -300px;
+  }
+}
 .services .section-box {
   max-width: 1200px;
 }
@@ -309,11 +485,26 @@ button, .btn {
   color: #fff;
   margin-bottom: 55px;
 }
+@media screen and (max-width: 999px) {
+  .services h2 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .services h2 {
+    margin-top: 0;
+  }
+}
 .services__content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
+}
+@media screen and (max-width: 999px) {
+  .services__content {
+    padding: 0 15px;
+  }
 }
 .services__card {
   position: relative;
@@ -328,15 +519,63 @@ button, .btn {
   height: 100%;
   padding: 45px 0;
 }
+@media screen and (max-width: 749px) {
+  .services__card {
+    max-width: 200px;
+    min-height: 0;
+    height: 200px;
+    background-position: center;
+    border-radius: 50%;
+    padding: 20px 35px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services__card {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services__card {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .services__card img {
+    max-width: 70px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services__card img {
+    max-width: 50px;
+  }
+}
 .services__card p {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
   max-width: 182px;
 }
+@media screen and (max-width: 749px) {
+  .services__card p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services__card p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 
 .indications {
   padding: 0 50px 64px;
+}
+@media screen and (max-width: 999px) {
+  .indications {
+    padding: 0 15px 50px;
+  }
 }
 .indications h2 {
   color: #EB2561;
@@ -346,12 +585,22 @@ button, .btn {
   display: flex;
   gap: 40px;
 }
+@media screen and (max-width: 999px) {
+  .indications__content {
+    flex-direction: column;
+  }
+}
 .indications__card {
   position: relative;
   width: calc(50% - 20px);
   border-radius: 30px;
   box-shadow: 0 9px 13px rgba(0, 0, 0, 0.06);
   padding: 60px 25px;
+}
+@media screen and (max-width: 999px) {
+  .indications__card {
+    width: 100%;
+  }
 }
 .indications__card::before {
   font-family: "Cera Round Pro", Arial, sans-serif;
@@ -401,6 +650,16 @@ button, .btn {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 999px) {
+  .indications__card h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .indications__card h3 {
+    font-size: 25px;
+  }
+}
 .indications__card ul {
   padding-left: 25px;
 }
@@ -417,6 +676,17 @@ button, .btn {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 999px) {
+  .indications__card ul li {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .indications__card ul li {
+    font-size: 18px;
+  }
+}
 .indications__card ul li:last-of-type {
   margin-bottom: 0;
 }
@@ -426,13 +696,33 @@ button, .btn {
   background-size: cover;
   padding: 70px 150px;
 }
+@media screen and (max-width: 999px) {
+  .examples {
+    padding: 30px 100px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .examples {
+    padding: 30px 75px;
+  }
+}
 .examples h2 {
   color: #fff;
   margin-bottom: 70px;
 }
+@media screen and (max-width: 999px) {
+  .examples h2 {
+    margin-bottom: 30px;
+  }
+}
 .examples .btn {
   margin: 0 auto;
   line-height: 64px;
+}
+@media screen and (max-width: 999px) {
+  .examples .btn {
+    line-height: 50px;
+  }
 }
 .examples__content {
   position: relative;
@@ -455,14 +745,35 @@ button, .btn {
   border-radius: 50%;
   top: 50%;
 }
+@media screen and (max-width: 999px) {
+  .examples .swiper-button-prev, .examples .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
 .examples .swiper-button-prev::after, .examples .swiper-button-next::after {
   font-size: 23px;
+}
+@media screen and (max-width: 999px) {
+  .examples .swiper-button-prev::after, .examples .swiper-button-next::after {
+    font-size: 14px;
+  }
 }
 .examples .swiper-button-prev {
   left: -80px;
 }
+@media screen and (max-width: 749px) {
+  .examples .swiper-button-prev {
+    left: -60px;
+  }
+}
 .examples .swiper-button-next {
   right: -80px;
+}
+@media screen and (max-width: 749px) {
+  .examples .swiper-button-next {
+    right: -60px;
+  }
 }
 .examples .before-after {
   max-width: 500px;
@@ -475,9 +786,19 @@ button, .btn {
     height: 350px !important;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 749px) {
   .examples .before-after {
-    height: 250px !important;
+    height: 500px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .examples .before-after {
+    height: 350px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .examples .before-after {
+    height: 225px !important;
   }
 }
 .examples .before-after img {
@@ -533,19 +854,41 @@ button, .btn {
   top: 76px;
   left: 90px;
 }
+@media screen and (max-width: 999px) {
+  .operation__content::before {
+    width: calc(50% - 95px);
+    top: 62px;
+    left: 80px;
+  }
+}
 .operation__content button {
   line-height: 74px;
   border: none;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.26);
   margin: 0 auto;
 }
+@media screen and (max-width: 999px) {
+  .operation__content button {
+    line-height: 60px;
+  }
+}
 .operation__list {
   padding: 0 30px;
   margin-bottom: 35px;
 }
+@media screen and (max-width: 999px) {
+  .operation__list {
+    padding: 0 15px;
+  }
+}
 .operation__step {
   position: relative;
   padding: 40px 120px 40px 10px;
+}
+@media screen and (max-width: 749px) {
+  .operation__step {
+    padding: 20px 50px 20px 10px;
+  }
 }
 .operation__step::before {
   content: "";
@@ -553,6 +896,11 @@ button, .btn {
   width: calc(100% - 160px);
   height: 100%;
   top: 0;
+}
+@media screen and (max-width: 749px) {
+  .operation__step::before {
+    width: calc(100% - 90px);
+  }
 }
 .operation__step::after {
   content: "";
@@ -591,6 +939,11 @@ button, .btn {
 .operation__step:nth-of-type(even) div {
   right: 73px;
 }
+@media screen and (max-width: 749px) {
+  .operation__step:nth-of-type(even) div {
+    right: 4px;
+  }
+}
 .operation__step:nth-of-type(even)::before {
   border-right: 3px #2C60A0 dotted;
   border-bottom: 3px #2C60A0 dotted;
@@ -602,9 +955,14 @@ button, .btn {
   border-radius: 0 30px 0 0;
   right: 98px;
 }
+@media screen and (max-width: 749px) {
+  .operation__step:nth-of-type(even)::after {
+    right: 28px;
+  }
+}
 .operation__step:last-of-type div::after {
-  height: 50px;
-  bottom: -50px;
+  height: 75px;
+  bottom: -75px;
   background-color: #1D4178;
 }
 .operation__step:last-of-type::before {
@@ -652,6 +1010,11 @@ button, .btn {
   text-transform: uppercase;
   color: #EB2561;
 }
+@media screen and (max-width: 999px) {
+  .operation__step h3 {
+    font-size: 20px;
+  }
+}
 .operation__step p {
   font-weight: 300;
   font-size: 17px;
@@ -659,11 +1022,16 @@ button, .btn {
   color: #fff;
   max-width: 75%;
 }
+@media screen and (max-width: 999px) {
+  .operation__step p {
+    font-size: 14px;
+  }
+}
 
 .faq {
   max-width: 1200px;
   margin: 0 auto 25px;
-  padding: 0 50px;
+  padding: 0 15px;
 }
 .faq h2 {
   color: #EB2561;
@@ -702,6 +1070,17 @@ button, .btn {
   border-radius: 30px;
   transition: all 0.1s linear;
 }
+@media screen and (max-width: 999px) {
+  .faq__item__header {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .faq__item__header {
+    padding: 0 50px 0 55px;
+    font-size: 12px;
+  }
+}
 .faq__item__answer {
   display: none;
   font-family: "Cera Round Pro", Arial, sans-serif;
@@ -712,6 +1091,16 @@ button, .btn {
   padding: 0 70px;
   margin-top: 10px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 999px) {
+  .faq__item__answer {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .faq__item__answer {
+    padding: 0 50px;
+  }
 }
 .faq__item.active .faq__item__header {
   background-color: #76B2F3;
@@ -724,6 +1113,11 @@ button, .btn {
   background-color: #3D81CD;
   margin: 0 auto;
 }
+@media screen and (max-width: 999px) {
+  .faq .btn {
+    line-height: 50px;
+  }
+}
 
 .reviews {
   background: url(../images/reviews-bg.png) no-repeat top center;
@@ -733,6 +1127,11 @@ button, .btn {
 @media screen and (max-width: 1400px) {
   .reviews {
     padding: 100px 100px 128px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .reviews {
+    padding: 50px;
   }
 }
 .reviews h2 {
@@ -747,6 +1146,11 @@ button, .btn {
   margin-left: auto;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 999px) {
+  .reviews .btn {
+    margin: 0 auto 50px;
+  }
+}
 .reviews__content {
   position: relative;
   max-width: 1275px;
@@ -760,8 +1164,19 @@ button, .btn {
   border-radius: 50%;
   top: 50%;
 }
+@media screen and (max-width: 999px) {
+  .reviews .swiper-button-prev, .reviews .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
 .reviews .swiper-button-prev::after, .reviews .swiper-button-next::after {
   font-size: 23px;
+}
+@media screen and (max-width: 999px) {
+  .reviews .swiper-button-prev::after, .reviews .swiper-button-next::after {
+    font-size: 14px;
+  }
 }
 .reviews .swiper-button-prev {
   left: -160px;
@@ -771,12 +1186,22 @@ button, .btn {
     left: -80px;
   }
 }
+@media screen and (max-width: 749px) {
+  .reviews .swiper-button-prev {
+    left: -40px;
+  }
+}
 .reviews .swiper-button-next {
   right: -160px;
 }
 @media screen and (max-width: 1400px) {
   .reviews .swiper-button-next {
     right: -80px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .reviews .swiper-button-next {
+    right: -40px;
   }
 }
 .reviews .swiper-slide {
@@ -823,6 +1248,11 @@ button, .btn {
   font-size: 14px;
   line-height: 18px;
 }
+@media screen and (max-width: 749px) {
+  .reviews__slide__text {
+    font-size: 12px;
+  }
+}
 
 .licenses {
   background: url(../images/licenses-bg.png) no-repeat top center;
@@ -837,6 +1267,12 @@ button, .btn {
 }
 .licenses .swiper-licenses {
   margin-bottom: 84px;
+}
+@media screen and (max-width: 499px) {
+  .licenses .swiper-slide a {
+    display: flex;
+    justify-content: center;
+  }
 }
 .licenses .swiper-pagination {
   bottom: 57px;
@@ -865,6 +1301,16 @@ button, .btn {
     max-width: 750px;
   }
 }
+@media screen and (max-width: 749px) {
+  .video__content {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .video__content {
+    width: 345px;
+  }
+}
 .video__content iframe {
   border: 15px #494A5B solid;
   margin-bottom: 35px;
@@ -872,7 +1318,20 @@ button, .btn {
 }
 @media screen and (max-width: 1279px) {
   .video__content iframe {
-    width: 750px;
+    width: 720px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .video__content iframe {
+    width: 500px;
+    border: 10px #494A5B solid;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .video__content iframe {
+    width: 345px;
+    border: 5px #494A5B solid;
   }
 }
 .video__content p {
@@ -880,4 +1339,9 @@ button, .btn {
   line-height: 17px;
   color: #fff;
   margin-left: 15px;
+}
+@media screen and (max-width: 749px) {
+  .video__content p {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,10 @@
 .indications {
     padding: 0 50px 64px;
 
+    @media #{$tablet} {
+        padding: 0 15px 50px;
+    }
+
     h2 {
         color: $color-second;
         margin-bottom: 50px;
@@ -9,6 +13,10 @@
     &__content {
         display: flex;
         gap: 40px;
+
+        @media #{$tablet} {
+            flex-direction: column;
+        }
     }
 
     &__card {
@@ -17,6 +25,10 @@
         border-radius: 30px;
         box-shadow: 0 9px 13px rgba($color: $color-black, $alpha: 0.06);
         padding: 60px 25px;
+
+        @media #{$tablet} {
+            width: 100%;
+        }
 
         &::before {
             font-family: $font-main;
@@ -71,6 +83,14 @@
                 font-size: 30px;
                 margin-bottom: 30px;
             }
+
+            @media #{$tablet} {
+                font-size: 40px;
+            }
+
+            @media #{$phone} {
+                font-size: 25px;
+            }
         }
 
         ul {
@@ -86,6 +106,15 @@
                 @media #{$desktop} {
                     font-size: 18px;
                     margin-bottom: 30px;
+                }
+
+                @media #{$tablet} {
+                    font-size: 22px;
+                    line-height: 22px;
+                }
+
+                @media #{$phone} {
+                    font-size: 18px;
                 }
 
                 &:last-of-type {

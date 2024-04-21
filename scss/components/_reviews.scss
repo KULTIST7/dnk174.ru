@@ -7,6 +7,10 @@
         padding: 100px 100px 128px;
     }
 
+    @media #{$phone} {
+        padding: 50px;
+    }
+
     h2 {
         color: $color-second;
         margin-bottom: 30px;
@@ -19,6 +23,10 @@
         border: 1px #3D81CD solid;
         margin-left: auto;
         margin-bottom: 50px;
+
+        @media #{$tablet} {
+            margin: 0 auto 50px;
+        }
     }
 
     &__content {
@@ -36,9 +44,18 @@
             background-color: rgba($color: $color-black, $alpha: 0.2);
             border-radius: 50%;
             top: 50%;
+
+            @media #{$tablet} {
+                width: 40px;
+                height: 40px;
+            }
     
             &::after {
                 font-size: 23px;
+
+                @media #{$tablet} {
+                    font-size: 14px;
+                }
             }
         }
         
@@ -48,6 +65,10 @@
             @media screen and (max-width: 1400px) {
                 left: -80px;
             }
+
+            @media #{$phone} {
+                left: -40px;
+            }
         }
 
         &-button-next {
@@ -55,6 +76,10 @@
             
             @media screen and (max-width: 1400px) {
                 right: -80px;
+            }
+
+            @media #{$phone} {
+                right: -40px;
             }
         }
 
@@ -107,6 +132,10 @@
         &__text {
             font-size: 14px;
             line-height: 18px;
+
+            @media #{$phone} {
+                font-size: 12px;
+            }
         }
     }
 }

@@ -3,14 +3,30 @@
     background-size: cover;
     padding: 70px 150px;
 
+    @media #{$tablet} {
+        padding: 30px 100px;
+    }
+
+    @media #{$phone} {
+        padding: 30px 75px;
+    }
+
     h2 {
         color: $color-white;
         margin-bottom: 70px;
+
+        @media #{$tablet} {
+            margin-bottom: 30px;
+        }
     }
 
     .btn {
         margin: 0 auto;
         line-height: 64px;
+
+        @media #{$tablet} {
+            line-height: 50px;
+        }
     }
 
     &__content {
@@ -37,17 +53,34 @@
             border-radius: 50%;
             top: 50%;
     
+            @media #{$tablet} {
+                width: 40px;
+                height: 40px;
+            }
+
             &::after {
                 font-size: 23px;
+
+                @media #{$tablet} {
+                    font-size: 14px;
+                }
             }
         }
 
         &-button-prev {
             left: -80px;
+
+            @media #{$phone} {
+                left: -60px;
+            }
         }
     
         &-button-next {
             right: -80px;
+
+            @media #{$phone} {
+                right: -60px;
+            }
         }
     }
 
@@ -60,9 +93,17 @@
         @media screen and (max-width: 1500px) {
             height: 350px !important;
         }
+        
+        @media #{$phone} {
+            height: 500px !important;
+        }
 
-        @media screen and (max-width: 1100px) {
-            height: 250px !important;
+        @media screen and (max-width: 550px) {
+            height: 350px !important;
+        }
+        
+        @media screen and (max-width: 450px) {
+            height: 225px !important;
         }
 
         img {

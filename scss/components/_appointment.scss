@@ -2,26 +2,57 @@
     background-color: $color-blue;
     padding: 40px;
 
+    @media #{$tablet} {
+        padding: 30px 15px;
+    }
+
     &__content {
         display: flex;
         height: 100%;
+        
+        @media #{$phone} {
+            justify-content: center;
+        }
 
         form {
             display: flex;
             max-width: 90%;
             width: 100%;
+
+            @media #{$phone} {
+                max-width: none;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                @media #{$phone} {
+                    margin-top: 20px;
+                }
+            }
         }
     }
 
     &__form-wrapper {
-        // display: flex;
         margin-right: 45px;
+        
+        @media #{$tablet} {
+            margin-right: 20px;
+        }
+
+        @media #{$phone} {
+            margin-right: 0;
+        }
     }
 
     &__input-box {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+
+        @media #{$phone} {
+            flex-direction: column;
+        }
 
         p {
             position: relative;
@@ -30,6 +61,14 @@
             font-size: 18px;
             color: $color-white;
             margin-right: auto;
+
+            @media #{$tablet} {
+                font-size: 14px;
+            }
+
+            @media #{$phone} {
+                margin-bottom: 10px;
+            }
 
             &::before {
                 content: '*';
@@ -58,6 +97,15 @@
             @media #{$desktop} {
                 width: 70%;
             }
+
+            @media #{$tablet} {
+                font-size: 14px;
+            }
+
+            @media #{$phone} {
+                width: 100%;
+                margin-left: 0;
+            }
         }
     }
 
@@ -69,8 +117,17 @@
             width: 70%;
         }
 
+        @media #{$phone} {
+            width: 100%;
+            margin-left: 0;
+        }
+
         &>p {
             margin-bottom: 23px;
+
+            @media #{$tablet} {
+                margin-bottom: 15px;
+            }
         }
 
         p,
@@ -79,6 +136,10 @@
             font-size: 13px;
             line-height: 17px;
             color: #C8C8C8;
+
+            @media #{$tablet} {
+                font-size: 11px;
+            }
         }
 
         div {

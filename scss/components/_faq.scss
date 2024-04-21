@@ -1,7 +1,7 @@
 .faq {
     max-width: 1200px;
     margin: 0 auto 25px;
-    padding: 0 50px;
+    padding: 0 15px;
 
     h2 {
         color: $color-second;
@@ -43,6 +43,15 @@
             padding: 0 70px;
             border-radius: 30px;
             transition: all .1s linear;
+
+            @media #{$tablet} {
+                font-size: 16px;
+            }
+
+            @media #{$phone} {
+                padding:0 50px 0 55px;
+                font-size: 12px;
+            }
         }
 
         &__answer {
@@ -55,6 +64,14 @@
             padding: 0 70px;
             margin-top: 10px;
             margin-bottom: 50px;
+            
+            @media #{$tablet} {
+                font-size: 14px;
+            }
+
+            @media #{$phone} {
+                padding: 0 50px;
+            }
         }
 
         &.active {
@@ -74,5 +91,9 @@
         line-height: 74px;
         background-color: #3D81CD;
         margin: 0 auto;
+
+        @media #{$tablet} {
+            line-height: 50px;
+        }
     }
 }

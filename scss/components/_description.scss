@@ -8,6 +8,10 @@
         color: #7A7A7A;
         margin-bottom: 120px;
 
+        @media #{$tablet} {
+            margin-bottom: 50px;
+        }
+
         &::first-letter {
             color: $color-second;
         }
@@ -28,12 +32,21 @@
         background-color: $color-white;
         padding: 45px 25px 66px;
 
+        @media #{$tablet} {
+            padding: 25px 15px 25px;
+        }
+
         p, ol li, ul li {
             font-family: $font-main;
             font-weight: $font-weight-medium;
             font-size: 18px;
             line-height: 18px;
             color: $color-light-gray;
+
+            @media #{$tablet} {
+                font-size: 14px;
+                line-height: 14px;
+            }
         }
 
         p, ol li {

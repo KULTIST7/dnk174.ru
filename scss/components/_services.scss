@@ -5,6 +5,10 @@
     padding: 260px 0 320px;
     margin-bottom: -180px;
 
+    @media #{$tablet} {
+        margin-bottom: -300px;
+    }
+
     .section-box {
         max-width: 1200px;
     }
@@ -12,6 +16,14 @@
     h2 {
         color: $color-white;
         margin-bottom: 55px;
+
+        @media #{$tablet} {
+            margin-top: 50px;
+        }
+
+        @media #{$phone} {
+            margin-top: 0;
+        }
     }
 
     &__content {
@@ -19,6 +31,10 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 16px;
+
+        @media #{$tablet} {
+            padding: 0 15px;
+        }
     }
 
     &__card {
@@ -32,13 +48,51 @@
         min-height: 299px;
         width: 100%;
         height: 100%;
-        padding: 45px 0; 
+        padding: 45px 0;
+
+        @media #{$phone} {
+            max-width: 200px;
+            min-height: 0;
+            height: 200px;
+            background-position: center;
+            border-radius: 50%;
+            padding: 20px 35px;
+        }
+
+        @media screen and (max-width: 450px) {
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 450px) {
+            max-width: 150px;
+            height: 150px;
+        }
+
+        img {
+            @media #{$phone} {
+                max-width: 70px;
+            }
+
+            @media screen and (max-width: 450px) {
+                max-width: 50px;
+            }
+        }
         
         p {
             font-weight: $font-weight-medium;
             font-size: 20px;
             text-align: center;
             max-width: 182px;
+
+            @media #{$phone} {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            @media screen and (max-width: 450px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
     }
 }

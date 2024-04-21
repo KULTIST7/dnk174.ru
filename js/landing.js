@@ -1,18 +1,28 @@
 $(document).ready(() => {
     let swiperBeforeAfter = new Swiper('.swiper-before-after', {
-        slidesPerView: 3,
+        slidesPerView: 1,
         allowTouchMove: false,
         spaceBetween: 20,
-        centeredSlides: true,
+        centeredSlides: false,
         initialSlide: 1,
         navigation: {
             nextEl: '.examples__swiper-arrows .swiper-button-next',
             prevEl: '.examples__swiper-arrows .swiper-button-prev'
+        },
+        breakpoints: {
+            999: {
+                slidesPerView: 3,
+                centeredSlides: true
+            },
+
+            749: {
+                slidesPerView: 2
+            }
         }
     });
 
     let swiperReviews = new Swiper('.swiper-reviews', {
-        slidesPerView: 2,
+        slidesPerView: 1,
         allowTouchMove: false,
         navigation: {
             nextEl: '.reviews__swiper-arrows .swiper-button-next',
@@ -21,16 +31,30 @@ $(document).ready(() => {
         breakpoints: {
             1400: {
                 slidesPerView: 3
+            },
+            1000: {
+                slidesPerView: 2
             }
         }
     });
 
     let swiperLicenses = new Swiper('.swiper-licenses', {
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 5,
         pagination: {
             el: '.licenses .swiper-pagination',
             clickable: true
+        },
+        breakpoints: {
+            1000: {
+                slidesPerView: 4
+            },
+            750: {
+                slidesPerView: 3
+            },
+            500: {
+                slidesPerView: 2
+            }
         }
     });
 
