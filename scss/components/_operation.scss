@@ -4,6 +4,11 @@
     padding: 70px 0 52px;
     margin-bottom: 60px;
 
+    @media #{$tablet} {
+        padding-top: 30px;
+        margin-bottom: 0;
+    }
+
     h2 {
         color: $color-white;
         margin-bottom: 66px;

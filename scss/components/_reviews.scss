@@ -25,7 +25,7 @@
         margin-bottom: 50px;
 
         @media #{$tablet} {
-            margin: 0 auto 50px;
+            margin: 0 auto 20px;
         }
     }
 
@@ -116,6 +116,10 @@
             padding: 100px 20px 20px 27px;
             margin-top: 40px;
 
+            @media #{$phone} {
+                padding: 50px 10px 10px 15px;
+            }
+
             h3 {
                 font-size: 20px;
                 line-height: 17px;
@@ -135,6 +139,7 @@
 
             @media #{$phone} {
                 font-size: 12px;
+                line-height: 12px;
             }
         }
     }

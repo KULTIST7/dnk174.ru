@@ -9,6 +9,10 @@
         margin-bottom: -300px;
     }
 
+    @media #{$phone} {
+        padding-top: 200px;
+    }
+
     .section-box {
         max-width: 1200px;
     }
@@ -23,6 +27,7 @@
 
         @media #{$phone} {
             margin-top: 0;
+            margin-bottom: 20px;
         }
     }
 

@@ -4,6 +4,7 @@
         object-position: 60%;
         width: auto;
         min-height: 735px;
+        border-bottom: 1px $color-white solid;
 
         @media screen and (min-width: 1921px) {
             width: 100%;

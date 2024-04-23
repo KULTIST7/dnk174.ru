@@ -3,6 +3,11 @@
     background-size: cover;
     padding: 65px 0 38px 0;
 
+    @media #{$tablet} {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
     h2 {
         margin-bottom: 35px;
     }

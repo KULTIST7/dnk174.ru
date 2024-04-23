@@ -1,8 +1,17 @@
 .indications {
     padding: 0 50px 64px;
+    transform: translateY(-130px);
+    margin-bottom: -130px;
 
     @media #{$tablet} {
+        transform: translateY(-80px);
+        margin-bottom: -80px;
         padding: 0 15px 50px;
+    }
+
+    @media #{$phone} {
+        transform: translateY(-30px);
+        margin-bottom: -30px;
     }
 
     h2 {
@@ -28,6 +37,10 @@
 
         @media #{$tablet} {
             width: 100%;
+        }
+
+        @media #{$phone} {
+            padding: 40px 15px;
         }
 
         &::before {
@@ -90,6 +103,7 @@
 
             @media #{$phone} {
                 font-size: 25px;
+                margin-bottom: 10px;
             }
         }
 
@@ -111,10 +125,12 @@
                 @media #{$tablet} {
                     font-size: 22px;
                     line-height: 22px;
+                    margin-bottom: 10px;
                 }
 
                 @media #{$phone} {
                     font-size: 18px;
+                    margin-bottom: 5px;
                 }
 
                 &:last-of-type {

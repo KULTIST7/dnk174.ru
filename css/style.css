@@ -109,6 +109,7 @@ button, .btn {
      object-position: 60%;
   width: auto;
   min-height: 735px;
+  border-bottom: 1px #fff solid;
 }
 @media screen and (min-width: 1921px) {
   .banner-bg {
@@ -281,6 +282,12 @@ button, .btn {
   background-size: cover;
   padding: 65px 0 38px 0;
 }
+@media screen and (max-width: 999px) {
+  .advantages {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
 .advantages h2 {
   margin-bottom: 35px;
 }
@@ -414,6 +421,15 @@ button, .btn {
   background-size: cover;
   padding: 66px 0 0;
 }
+@media screen and (max-width: 999px) {
+  .description {
+    padding-top: 20px;
+  }
+}
+.description.second {
+  background: url(../images/description-bg-2.png) no-repeat top center;
+  background-size: cover;
+}
 .description h2 {
   position: relative;
   color: #7A7A7A;
@@ -422,6 +438,11 @@ button, .btn {
 @media screen and (max-width: 999px) {
   .description h2 {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .description h2 {
+    margin-bottom: 20px;
   }
 }
 .description h2::first-letter {
@@ -478,6 +499,11 @@ button, .btn {
     margin-bottom: -300px;
   }
 }
+@media screen and (max-width: 749px) {
+  .services {
+    padding-top: 200px;
+  }
+}
 .services .section-box {
   max-width: 1200px;
 }
@@ -493,6 +519,7 @@ button, .btn {
 @media screen and (max-width: 749px) {
   .services h2 {
     margin-top: 0;
+    margin-bottom: 20px;
   }
 }
 .services__content {
@@ -571,10 +598,20 @@ button, .btn {
 
 .indications {
   padding: 0 50px 64px;
+  transform: translateY(-130px);
+  margin-bottom: -130px;
 }
 @media screen and (max-width: 999px) {
   .indications {
+    transform: translateY(-80px);
+    margin-bottom: -80px;
     padding: 0 15px 50px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .indications {
+    transform: translateY(-30px);
+    margin-bottom: -30px;
   }
 }
 .indications h2 {
@@ -600,6 +637,11 @@ button, .btn {
 @media screen and (max-width: 999px) {
   .indications__card {
     width: 100%;
+  }
+}
+@media screen and (max-width: 749px) {
+  .indications__card {
+    padding: 40px 15px;
   }
 }
 .indications__card::before {
@@ -658,6 +700,7 @@ button, .btn {
 @media screen and (max-width: 749px) {
   .indications__card h3 {
     font-size: 25px;
+    margin-bottom: 10px;
   }
 }
 .indications__card ul {
@@ -680,11 +723,13 @@ button, .btn {
   .indications__card ul li {
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 749px) {
   .indications__card ul li {
     font-size: 18px;
+    margin-bottom: 5px;
   }
 }
 .indications__card ul li:last-of-type {
@@ -835,6 +880,12 @@ button, .btn {
   background-size: cover;
   padding: 70px 0 52px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 999px) {
+  .operation {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
 }
 .operation h2 {
   color: #fff;
@@ -1037,8 +1088,18 @@ button, .btn {
   color: #EB2561;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 999px) {
+  .faq h2 {
+    margin-bottom: 30px;
+  }
+}
 .faq__content {
   margin-bottom: 70px;
+}
+@media screen and (max-width: 999px) {
+  .faq__content {
+    margin-bottom: 30px;
+  }
 }
 .faq__item {
   position: relative;
@@ -1148,7 +1209,7 @@ button, .btn {
 }
 @media screen and (max-width: 999px) {
   .reviews .btn {
-    margin: 0 auto 50px;
+    margin: 0 auto 20px;
   }
 }
 .reviews__content {
@@ -1234,6 +1295,11 @@ button, .btn {
   padding: 100px 20px 20px 27px;
   margin-top: 40px;
 }
+@media screen and (max-width: 749px) {
+  .reviews__slide__content {
+    padding: 50px 10px 10px 15px;
+  }
+}
 .reviews__slide__content h3 {
   font-size: 20px;
   line-height: 17px;
@@ -1251,6 +1317,7 @@ button, .btn {
 @media screen and (max-width: 749px) {
   .reviews__slide__text {
     font-size: 12px;
+    line-height: 12px;
   }
 }
 

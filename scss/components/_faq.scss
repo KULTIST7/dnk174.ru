@@ -3,13 +3,22 @@
     margin: 0 auto 25px;
     padding: 0 15px;
 
+
     h2 {
         color: $color-second;
         margin-bottom: 60px;
+
+        @media #{$tablet} {
+            margin-bottom: 30px;
+        }
     }
 
     &__content {
         margin-bottom: 70px;
+
+        @media #{$tablet} {
+            margin-bottom: 30px;
+        }
     }
 
     &__item {
